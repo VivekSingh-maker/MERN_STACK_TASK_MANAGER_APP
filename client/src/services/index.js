@@ -2,7 +2,7 @@ import axios from "axios";
 
 export const callRegisterUserApi = async (formData) => {
   const response = await axios.post(
-    "http://localhost:3000/api/user/register",
+    "https://owner-avatar-mern-stack-task-manager-app.onrender.com/api/user/register",
     formData,
     { withCredentials: true }
   );
@@ -12,7 +12,7 @@ export const callRegisterUserApi = async (formData) => {
 
 export const callLoginUserApi = async (formData) => {
   const response = await axios.post(
-    "http://localhost:3000/api/user/login",
+    "https://owner-avatar-mern-stack-task-manager-app.onrender.com/api/user/login",
     formData,
     { withCredentials: true }
   );
@@ -22,7 +22,7 @@ export const callLoginUserApi = async (formData) => {
 
 export const callUserAuthApi = async () => {
   const response = await axios.post(
-    "http://localhost:3000/api/user/auth",
+    "https://owner-avatar-mern-stack-task-manager-app.onrender.com/api/user/auth",
     {},
     { withCredentials: true }
   );
@@ -34,7 +34,7 @@ export const callUserAuthApi = async () => {
 
 export const callLogoutApi = async (req, res) => {
   const response = await axios.post(
-    "http://localhost:3000/api/user/logout",
+    "https://owner-avatar-mern-stack-task-manager-app.onrender.com/api/user/logout",
     {},
     { withCredentials: true }
   );
@@ -44,7 +44,7 @@ export const callLogoutApi = async (req, res) => {
 
 export const addNewTaskApi = async (formData) => {
   const response = await axios.post(
-    "http://localhost:3000/api/task/add-new-task",
+    "https://owner-avatar-mern-stack-task-manager-app.onrender.com/api/task/add-new-task",
     formData
   );
 
@@ -53,7 +53,7 @@ export const addNewTaskApi = async (formData) => {
 
 export const getAllTasksApi = async (getCurrentUserId) => {
   const response = await axios.get(
-    `http://localhost:3000/api/task/get-all-tasks-by-userid/${getCurrentUserId}`
+    `https://owner-avatar-mern-stack-task-manager-app.onrender.com/api/task/get-all-tasks-by-userid/${getCurrentUserId}`
   );
 
   return response?.data;
@@ -61,7 +61,7 @@ export const getAllTasksApi = async (getCurrentUserId) => {
 
 export const updateTaskApi = async (formData) => {
   const response = await axios.put(
-    `http://localhost:3000/api/task/update-task`,
+    `https://owner-avatar-mern-stack-task-manager-app.onrender.com/api/task/update-task`,
     formData
   );
 
@@ -70,7 +70,7 @@ export const updateTaskApi = async (formData) => {
 
 export const deleteTaskApi = async (getCurrentTaskId) => {
   const response = await axios.delete(
-    `http://localhost:3000/api/task/delete-task/${getCurrentTaskId}`
+    `https://owner-avatar-mern-stack-task-manager-app.onrender.com/api/task/delete-task/${getCurrentTaskId}`
   );
 
   return response?.data;
