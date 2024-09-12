@@ -233,7 +233,7 @@ Drag & Drop Todo: Users can drag and drop tasks between columns to update their 
 
 Project Link
 
-GitHub Repo: https://github.com/VivekSingh-maker/MERN_STACK_TASK_MANAGER_APP/
+GitHub Repo: https://github.com/VivekSingh-maker/MERN_STACK_TASK_MANAGER_APP.git
 
 Hosted URL: https://velvety-dragon-0569de.netlify.app/
 
